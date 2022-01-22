@@ -1,45 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-    <link href="./app.css" rel="stylesheet">
+    <title>靠北/告白中山股份無限公司 | 投稿系統2.0</title>
+    <meta charset="utf-8" />
+    <meta type="discription" content="歡迎來到靠北/告白中山股份無限公司 - 匿名投稿系統2.0" />
+    
+    <link href="./app.css" rel="stylesheet" />
+
     <script src="https://www.google.com/recaptcha/api.js"></script>
-    <meta charset="utf-8">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script>
-
-	function googleForm() {　
-
-        var field1 = $("[name='Q']").val();
-        var field2 = $("[name='QQ']").val();
-        var field3 = $("[name='QQQ']").val();
-        var field4 = $("[name='QQQQ']").val();
-
-		$.ajax({
-		    url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfA_75WHDZouggEiASDj016bPdlGYoAhjduwUk3T8azEFN84w/formResponse",
-		    data: {
-                "entry.726741578":field1,
-                "entry.1419849810":field2,
-                "entry.1899191775":field3,
-                "entry.595474089":field4,
-		    },
-		    type: "POST",
-		    dataType: "xml",
-		    statusCode: {
-                0: function() {
-                    alert("您的匿名投稿已送出，過程維持完全匿名狀態。如果在我們發布前需要刪除請使用刪文系統。");　
-                    window.location.assign("https://jayhsu0114.github.io/");
-                },
-
-                200: function() {
-                    alert("您的匿名投稿已送出，過程維持完全匿名狀態。如果在我們發布前需要刪除請使用刪文系統。");　
-                    window.location.assign("https://jayhsu0114.github.io/");
-                }
-		    }
-		});
-	}
-</script>
-
 </head>
 <body>
     <div class="header">
